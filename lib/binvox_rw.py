@@ -129,6 +129,7 @@ def read_as_3d_array(fp, fix_coords=True):
     boolean arrays use a byte per element).
 
     Doesn't do any checks on input except for the '#binvox' line.
+    
     """
     dims, translate, scale = read_header(fp)
     raw_data = np.frombuffer(fp.read(), dtype=np.uint8)

@@ -23,7 +23,9 @@ def image_transform(img, crop_x, crop_y, crop_loc=None, color_tint=None):
 
     if cfg.TRAIN.FLIP and np.random.rand() > 0.5:
         img = img[:, ::-1, ...]
-
+    # import cv2
+    # cv2.imwrite('./image_transform1.jpg',img)
+    # print('출력완료')
     return img
 
 

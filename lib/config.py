@@ -58,7 +58,7 @@ __C.TRAIN.RANDOM_NUM_VIEWS = True  # feed in random # views if n_views > 1
 
 __C.QUEUE_SIZE = 15  # maximum number of minibatches that can be put in a data queue
 
-# Data augmentation
+# Data augmentation 
 __C.TRAIN.RANDOM_CROP = True
 __C.TRAIN.PAD_X = 10
 __C.TRAIN.PAD_Y = 10
